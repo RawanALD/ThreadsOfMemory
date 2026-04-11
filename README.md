@@ -1,10 +1,10 @@
-# ThreadsOfMemory
+# Threads Of Memory
 A cozy pixel art game exploring Saudi heritage through weaving, storytelling, and memory.
 
 ---
 
 ## About the Game
-ThreadsOfMemory is a narrative-driven game that allows players to experience Saudi culture through traditional craftsmanship and immersive storytelling. The core gameplay revolves around weaving, where each crafted item connects to memories and stories that shape the world and its characters.
+Threads Of Memory is a narrative-driven game that allows players to experience Saudi culture through traditional craftsmanship and immersive storytelling. The core gameplay revolves around weaving, where each crafted item connects to memories and stories that shape the world and its characters.
 
 ---
 
@@ -32,6 +32,8 @@ This project is currently in development.
 ## Development Team
 - Rawan Aldossary
 - Salma Aldossary
+- Reem
+- Dalia
 
 ---
 
