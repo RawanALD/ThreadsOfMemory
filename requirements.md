@@ -57,7 +57,9 @@ FR-4: The system shall allow the player to use items from the inventory.
 ### 6.2 Crafting and Weaving System
 FR-5: The system shall allow the player to gather materials.  
 FR-6: The system shall allow the player to craft items using collected materials.  
-FR-7: The system shall display available crafting recipes to the player.  
+FR-7: The system shall display available crafting recipes to the player.
+#### Use Case Diagram
+![Weaving Use Case](docs/weaving-usecase.png)
 
 ### 6.3 Shop System
 FR-8: The system shall allow the player to purchase items.  
@@ -69,13 +71,17 @@ FR-10: The system shall display item prices to the player.
 ### 6.4 NPC Interaction
 FR-11: The system shall allow the player to interact with NPCs.  
 FR-12: The system shall provide dialogue and story elements through NPCs.  
-FR-13: The system shall allow the player to complete tasks or quests.  
+FR-13: The system shall allow the player to complete tasks or quests.
+#### Use Case Diagram
+![NPC Use Case](docs/npc-usecase.png)
 
 ### 6.5 Game System
 FR-14: The system shall allow the player to save the game.  
 FR-15: The system shall allow the player to load the game.  
 FR-16: The system shall include a day and night cycle.  
-FR-17: The system shall allow the player to pause the game.  
+FR-17: The system shall allow the player to pause the game.
+#### Use Case Diagram
+![Game Use Case](docs/game-usecase.png)
 
 ---
 
