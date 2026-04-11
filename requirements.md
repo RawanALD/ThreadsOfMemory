@@ -50,7 +50,9 @@ The goal of this project is to develop a narrative-driven pixel art game that al
 FR-1: The system shall allow the player to view the inventory.  
 FR-2: The system shall allow the player to add items to the inventory.  
 FR-3: The system shall allow the player to remove items from the inventory.  
-FR-4: The system shall allow the player to use items from the inventory.  
+FR-4: The system shall allow the player to use items from the inventory.
+#### Use Case Diagram
+![Inventory Use Case](docs/inventory-usecase.png)
 
 ### 6.2 Crafting and Weaving System
 FR-5: The system shall allow the player to gather materials.  
@@ -61,6 +63,8 @@ FR-7: The system shall display available crafting recipes to the player.
 FR-8: The system shall allow the player to purchase items.  
 FR-9: The system shall allow the player to sell items.  
 FR-10: The system shall display item prices to the player.  
+#### Use Case Diagram
+![Shop Use Case](docs/shop-usecase.png)
 
 ### 6.4 NPC Interaction
 FR-11: The system shall allow the player to interact with NPCs.  
