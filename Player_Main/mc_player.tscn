@@ -138,14 +138,16 @@ _data = {
 }
 
 [node name="MC_Player" type="CharacterBody2D" unique_id=1123856710]
+z_index = 10
 collision_mask = 16
+motion_mode = 1
+wall_min_slide_angle = 0.17453292
 script = ExtResource("1_7mvyp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1308368002]
 shape = SubResource("CircleShape2D_edjgo")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=813869008]
-position = Vector2(0, -9)
 texture = ExtResource("1_lwp3f")
 hframes = 7
 vframes = 4

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dggp1piej74tj"]
+
+[ext_resource type="PackedScene" uid="uid://cqpvqm476uoxp" path="res://TileMaps/grass-01.tscn" id="1_vbl6q"]
+
+[node name="01" type="Node2D" unique_id=1669034876]
+
+[node name="Grass01" parent="." unique_id=958742800 instance=ExtResource("1_vbl6q")]

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://djbnhpyngcbdp"]
+
+[ext_resource type="Script" uid="uid://b8k6wdhfy107t" path="res://Items/Scripts/item_data.gd" id="1_5xvcf"]
+[ext_resource type="Texture2D" uid="uid://bstyhfv26081y" path="res://Items/Sprites/sheep_assets_x4.png" id="2_a5gdy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5gdy"]
+atlas = ExtResource("2_a5gdy")
+region = Rect2(125, 828.756, 64, 64)
+
+[resource]
+script = ExtResource("1_5xvcf")
+name = "Wool"
+description = "Sheep wool, essential for traditional Al Sadu weaving."
+texture = SubResource("AtlasTexture_a5gdy")
+metadata/_custom_type_script = "uid://b8k6wdhfy107t"
