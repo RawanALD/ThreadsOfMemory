@@ -32,8 +32,8 @@ This project is currently in development.
 ## Development Team
 - Rawan Aldossary
 - Salma Aldossary
-- Reem
-- Dalia
+- Reem Alkulaibi
+- Dalia Alghamdi
 
 ---
 
