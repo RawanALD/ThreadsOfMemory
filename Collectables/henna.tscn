@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://du5i4pvdpuva1"]
+
+[ext_resource type="PackedScene" uid="uid://c82g2eaijsh8f" path="res://Collectables/collectable.tscn" id="1_2huet"]
+[ext_resource type="Texture2D" uid="uid://bmj7d0w4wbajx" path="res://Collectables/CollectablesArt/Henna.png" id="2_7bk6k"]
+[ext_resource type="Resource" uid="uid://c31jnjsuqsfg1" path="res://mainInventoryUI/Resources/Henna.tres" id="2_xh3f8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xh3f8"]
+resource_local_to_scene = true
+size = Vector2(19, 17)
+
+[node name="Henna" unique_id=1838490237 instance=ExtResource("1_2huet")]
+itemRes = ExtResource("2_xh3f8")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=1751589054]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_xh3f8")
+
+[node name="Sprite2D" parent="." index="1" unique_id=263553760]
+position = Vector2(-2.0861626e-07, -5.066395e-07)
+scale = Vector2(0.6666666, 0.6666666)
+texture = ExtResource("2_7bk6k")

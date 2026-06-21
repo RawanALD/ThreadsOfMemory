@@ -1,19 +1,15 @@
 class_name State_Idle extends State
 
 @onready var walk : State = $"../walk"
+@onready var water : State = $"../watering"
+@onready var till : State = $"../tilling"
+@onready var plant : State = $"../planting"
 
-# Called when the node enters the scene tree for the first time.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-
-## what happens when the player enters this state?
 func Enter() -> void:
 	player.UpdateAnimation("idle")
 	pass
 
-
-## what happens when the player exits this state?
 func Exit() -> void:
 	pass
 
@@ -28,5 +24,13 @@ func physics(_delta: float) -> State:
 	return null
 
 
-func HandleInput(_event: InputEvent) -> State:
+func HandleInput(event: InputEvent) -> State:
+	if event.is_action_pressed("hit"):
+		match player.current_tool:
+			DataTypes.Tools.WaterCrops:
+				return water
+			DataTypes.Tools.TillGround:
+				return till
+			DataTypes.Tools.PlantHenna, DataTypes.Tools.PlantBeetroot, DataTypes.Tools.PlantBluenila:
+				return plant
 	return null

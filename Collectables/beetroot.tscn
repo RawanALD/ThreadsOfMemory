@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dj6pqhcpama38"]
+
+[ext_resource type="PackedScene" uid="uid://c82g2eaijsh8f" path="res://Collectables/collectable.tscn" id="1_bf0x0"]
+[ext_resource type="Resource" uid="uid://4j5sq0lwyg04" path="res://mainInventoryUI/Resources/Beetroot.tres" id="2_3t0we"]
+[ext_resource type="Texture2D" uid="uid://2aywi13e0os2" path="res://Collectables/CollectablesArt/Beetroot.png" id="2_tot8e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3t0we"]
+resource_local_to_scene = true
+size = Vector2(18, 18)
+
+[node name="Beetroot" unique_id=1838490237 instance=ExtResource("1_bf0x0")]
+itemRes = ExtResource("2_3t0we")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=1751589054]
+shape = SubResource("RectangleShape2D_3t0we")
+
+[node name="Sprite2D" parent="." index="1" unique_id=263553760]
+position = Vector2(5.9604645e-07, -2.3841858e-07)
+scale = Vector2(1, 0.9)
+texture = ExtResource("2_tot8e")

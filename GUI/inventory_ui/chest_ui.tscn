@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bjjc7b8qjusr4"]
+
+[ext_resource type="Script" uid="uid://xjp1iprs4fwe" path="res://GUI/inventory_ui/chest_ui.gd" id="1_lee68"]
+
+[node name="ChestUI" type="Control" unique_id=904948263]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lee68")
+
+[node name="Panel" type="Panel" parent="." unique_id=1446943016]
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 100.0
+
+[node name="ListsContainer" type="HBoxContainer" parent="Panel" unique_id=1223947854]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerScroll" type="ScrollContainer" parent="Panel/ListsContainer" unique_id=2076889977]
+custom_minimum_size = Vector2(90, 60)
+layout_mode = 2
+
+[node name="PlayerList" type="VBoxContainer" parent="Panel/ListsContainer/PlayerScroll" unique_id=962792061]
+custom_minimum_size = Vector2(65, 100)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Label" type="Label" parent="Panel/ListsContainer/PlayerScroll/PlayerList" unique_id=1271062076]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Your Bag"
+
+[node name="ChestScroll" type="ScrollContainer" parent="Panel/ListsContainer" unique_id=1101488114]
+custom_minimum_size = Vector2(90, 60)
+layout_mode = 2
+
+[node name="ChestList" type="VBoxContainer" parent="Panel/ListsContainer/ChestScroll" unique_id=1547309077]
+custom_minimum_size = Vector2(65, 100)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Label" type="Label" parent="Panel/ListsContainer/ChestScroll/ChestList" unique_id=1304999230]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "chest"
+
+[node name="Button" type="Button" parent="Panel" unique_id=1296132202]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 76.0
+offset_right = 130.0
+offset_bottom = 97.0
+theme_override_font_sizes/font_size = 9
+text = "move"

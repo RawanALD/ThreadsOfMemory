@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://7bkjvh5uoyfx"]
+
+[ext_resource type="FontFile" uid="uid://cubpb0can0wxo" path="res://mainInventoryUI/Kenney Mini Square.ttf" id="1_84ijy"]
+[ext_resource type="Script" uid="uid://dj5l4cu2hib27" path="res://mainInventoryUI/items_stack_gui.gd" id="1_rxeua"]
+
+[node name="Panel" type="Panel" unique_id=590247573]
+script = ExtResource("1_rxeua")
+
+[node name="item" type="Sprite2D" parent="." unique_id=467815879]
+
+[node name="Label" type="Label" parent="." unique_id=2020118147]
+custom_minimum_size = Vector2(11, 14)
+layout_mode = 0
+offset_left = -1.0
+offset_right = 10.0
+offset_bottom = 14.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.41568628)
+theme_override_fonts/font = ExtResource("1_84ijy")
+theme_override_font_sizes/font_size = 8
+text = "99"
+horizontal_alignment = 2

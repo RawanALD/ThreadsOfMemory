@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://c31jnjsuqsfg1"]
+
+[ext_resource type="Script" uid="uid://dfan87b4tblev" path="res://mainInventoryUI/Scripts/inventoryItem.gd" id="1_wqiwj"]
+[ext_resource type="Texture2D" uid="uid://bmj7d0w4wbajx" path="res://Collectables/CollectablesArt/Henna.png" id="2_0kadk"]
+
+[resource]
+script = ExtResource("1_wqiwj")
+name = "Henna"
+texture = ExtResource("2_0kadk")
+metadata/_custom_type_script = "uid://dfan87b4tblev"

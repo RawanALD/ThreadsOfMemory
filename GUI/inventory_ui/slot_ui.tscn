@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cqn8sa1e0y6un"]
+
+[ext_resource type="Script" uid="uid://ckgl0jeg8ogq4" path="res://GUI/inventory_ui/slot_ui.gd" id="1_ew3dm"]
+
+[node name="SlotUI" type="Control" unique_id=1165041752]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ew3dm")
+
+[node name="Panel" type="Panel" parent="." unique_id=1293168]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 30.0
+
+[node name="ItemLabel" type="Label" parent="Panel" unique_id=445496145]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 7
+
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bfp1tm6php5at"]
+
+[ext_resource type="Script" uid="uid://b6mk8flh4dsyr" path="res://Interactables/chest.gd" id="1_enxnb"]
+[ext_resource type="Resource" uid="uid://bsbyblpoqgmtd" path="res://Items/bedroom_chest_inventory.tres" id="2_odjdj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_waagb"]
+size = Vector2(32, 32)
+
+[node name="Chest" type="Area2D" unique_id=973281041]
+script = ExtResource("1_enxnb")
+chest_inventory = ExtResource("2_odjdj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1508907929]
+shape = SubResource("RectangleShape2D_waagb")

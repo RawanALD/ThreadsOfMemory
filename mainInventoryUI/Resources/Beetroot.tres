@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://4j5sq0lwyg04"]
+
+[ext_resource type="Script" uid="uid://dfan87b4tblev" path="res://mainInventoryUI/Scripts/inventoryItem.gd" id="1_o0p6n"]
+[ext_resource type="Texture2D" uid="uid://2aywi13e0os2" path="res://Collectables/CollectablesArt/Beetroot.png" id="2_jijxh"]
+
+[resource]
+script = ExtResource("1_o0p6n")
+name = "Beetroot"
+texture = ExtResource("2_jijxh")
+metadata/_custom_type_script = "uid://dfan87b4tblev"

@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dupx42e4e1drk"]
+
+[ext_resource type="Script" uid="uid://bt0g0mavr7yld" path="res://GUI/confirm_popup/confirm_popup.gd" id="1_2lsgn"]
+
+[node name="ConfirmPopup" type="Control" unique_id=916095247]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_2lsgn")
+
+[node name="Panel" type="Panel" parent="." unique_id=954362846]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MessageLabel" type="Label" parent="Panel" unique_id=25231005]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 98.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 10
+text = "Go to sleep?"
+
+[node name="YesButton" type="Button" parent="Panel" unique_id=1087923599]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 20.0
+theme_override_font_sizes/font_size = 7
+text = "Yes"
+
+[node name="NoButton" type="Button" parent="Panel" unique_id=450058817]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 21.0
+offset_right = 95.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 7
+text = "No"

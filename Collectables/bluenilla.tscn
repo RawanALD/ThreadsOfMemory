@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bietkn60d6sdg"]
+
+[ext_resource type="PackedScene" uid="uid://c82g2eaijsh8f" path="res://Collectables/collectable.tscn" id="1_ql4iv"]
+[ext_resource type="Texture2D" uid="uid://wkkxp204k4eo" path="res://Collectables/CollectablesArt/Bluenilla.png" id="2_11krs"]
+[ext_resource type="Resource" uid="uid://swahtqpsf5vt" path="res://mainInventoryUI/Resources/Bluenilla.tres" id="2_sj4jn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sj4jn"]
+resource_local_to_scene = true
+size = Vector2(14, 14)
+
+[node name="Bluenilla" unique_id=1838490237 instance=ExtResource("1_ql4iv")]
+itemRes = ExtResource("2_sj4jn")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=1751589054]
+shape = SubResource("RectangleShape2D_sj4jn")
+
+[node name="Sprite2D" parent="." index="1" unique_id=263553760]
+texture = ExtResource("2_11krs")
