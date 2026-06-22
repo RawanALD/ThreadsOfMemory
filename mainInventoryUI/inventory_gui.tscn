@@ -8,19 +8,42 @@
 custom_minimum_size = Vector2(138, 90)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 131.0
-offset_bottom = 84.0
+offset_right = 258.0
+offset_bottom = 160.0
 script = ExtResource("1_jtjfa")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=668077403]
 layout_mode = 0
-offset_right = 138.0
-offset_bottom = 90.0
+offset_right = 257.0
+offset_bottom = 159.0
 texture = ExtResource("1_x7epg")
 patch_margin_left = 6
 patch_margin_top = 6
 patch_margin_right = 6
 patch_margin_bottom = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NinePatchRect" unique_id=207720605]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 24.0
+offset_right = 156.0
+offset_bottom = 45.0
+scale = Vector2(1.5, 1.5)
+
+[node name="Slot" parent="NinePatchRect/HBoxContainer" unique_id=1350190889 instance=ExtResource("2_8km2i")]
+layout_mode = 2
+
+[node name="Slot2" parent="NinePatchRect/HBoxContainer" unique_id=714925214 instance=ExtResource("2_8km2i")]
+layout_mode = 2
+
+[node name="Slot3" parent="NinePatchRect/HBoxContainer" unique_id=1318876773 instance=ExtResource("2_8km2i")]
+layout_mode = 2
+
+[node name="Slot4" parent="NinePatchRect/HBoxContainer" unique_id=1488961684 instance=ExtResource("2_8km2i")]
+layout_mode = 2
+
+[node name="Slot5" parent="NinePatchRect/HBoxContainer" unique_id=1598456615 instance=ExtResource("2_8km2i")]
+layout_mode = 2
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect" unique_id=1277231922]
 layout_mode = 1
@@ -29,28 +52,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -34.0
-offset_right = 58.0
-offset_bottom = 34.0
+offset_left = -88.5
+offset_top = -7.5
+offset_right = 27.5
+offset_bottom = 37.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.5, 1.5)
 columns = 5
-
-[node name="Slot" parent="NinePatchRect/GridContainer" unique_id=1350190889 instance=ExtResource("2_8km2i")]
-layout_mode = 2
-
-[node name="Slot2" parent="NinePatchRect/GridContainer" unique_id=714925214 instance=ExtResource("2_8km2i")]
-layout_mode = 2
-
-[node name="Slot3" parent="NinePatchRect/GridContainer" unique_id=1318876773 instance=ExtResource("2_8km2i")]
-layout_mode = 2
-
-[node name="Slot4" parent="NinePatchRect/GridContainer" unique_id=1488961684 instance=ExtResource("2_8km2i")]
-layout_mode = 2
-
-[node name="Slot5" parent="NinePatchRect/GridContainer" unique_id=1598456615 instance=ExtResource("2_8km2i")]
-layout_mode = 2
 
 [node name="Slot6" parent="NinePatchRect/GridContainer" unique_id=1620418443 instance=ExtResource("2_8km2i")]
 layout_mode = 2

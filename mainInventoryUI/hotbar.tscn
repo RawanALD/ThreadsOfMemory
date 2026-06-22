@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d0b0p1vluykl7"]
+
+[ext_resource type="Script" uid="uid://dnpm6vijndg4j" path="res://mainInventoryUI/hotbar.gd" id="1_flk07"]
+[ext_resource type="PackedScene" uid="uid://cwgl7e8unbme8" path="res://mainInventoryUI/hotbar_slot.tscn" id="1_imkk0"]
+[ext_resource type="Texture2D" uid="uid://cpjerbjdl6ew7" path="res://mainInventoryUI/hotbar_selector.png" id="3_qh0na"]
+
+[node name="Hotbar" type="Panel" unique_id=183444879]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 2.0
+offset_right = 142.0
+offset_bottom = 25.0
+script = ExtResource("1_flk07")
+
+[node name="Container" type="HBoxContainer" parent="." unique_id=441987761]
+layout_mode = 0
+offset_right = 117.0
+offset_bottom = 21.0
+scale = Vector2(1.2, 1.2)
+
+[node name="HotbarSlot" parent="Container" unique_id=1627409632 instance=ExtResource("1_imkk0")]
+layout_mode = 2
+
+[node name="HotbarSlot2" parent="Container" unique_id=1504779473 instance=ExtResource("1_imkk0")]
+layout_mode = 2
+
+[node name="HotbarSlot3" parent="Container" unique_id=1985633073 instance=ExtResource("1_imkk0")]
+layout_mode = 2
+
+[node name="HotbarSlot4" parent="Container" unique_id=144482542 instance=ExtResource("1_imkk0")]
+layout_mode = 2
+
+[node name="HotbarSlot5" parent="Container" unique_id=1500376726 instance=ExtResource("1_imkk0")]
+layout_mode = 2
+
+[node name="Selector" type="Sprite2D" parent="." unique_id=2140383640]
+scale = Vector2(1.2500001, 1.1999999)
+texture = ExtResource("3_qh0na")
+centered = false

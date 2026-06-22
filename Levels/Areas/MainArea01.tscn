@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dn8exrm7op1wj" path="res://Levels/level_transition.tscn" id="4_mqlrk"]
 [ext_resource type="Script" uid="uid://bipdf6nopreb8" path="res://Levels/Areas/canvas_layer.gd" id="6_pd3wb"]
 [ext_resource type="PackedScene" uid="uid://b4nfkk3ja6tl5" path="res://mainInventoryUI/inventory_gui.tscn" id="6_voc6v"]
+[ext_resource type="PackedScene" uid="uid://d0b0p1vluykl7" path="res://mainInventoryUI/hotbar.tscn" id="8_ul44u"]
 
 [node name="MainArea01" type="Node2D" unique_id=717188619]
 script = ExtResource("1_b1qyn")
@@ -28,7 +29,7 @@ tile_set = ExtResource("2_mqlrk")
 tile_set = ExtResource("2_mqlrk")
 
 [node name="Collectables" type="TileMapLayer" parent="." unique_id=66500188]
-tile_map_data = PackedByteArray("AAADAAsAIQAAAAAAAwAGAA0AIQAAAAAAAwAHAAoAIQAAAAAAAwAIAAwAIQAAAAAAAQAFAAoAIQAAAAAAAgACAAwAIQAAAAAAAgADAA4AIQAAAAAAAgAEAA4AIQAAAAAAAgA=")
+tile_map_data = PackedByteArray("AAADAAsAIQAAAAAAAwAGAA0AIQAAAAAAAwAHAAoAIQAAAAAAAwAIAAwAIQAAAAAAAQAFAAoAIQAAAAAAAgACAAwAIQAAAAAAAgADAA4AIQAAAAAAAgAEAA4AIQAAAAAAAgAKAA4AIQAAAAAAAQA=")
 tile_set = ExtResource("2_mqlrk")
 
 [node name="PlayerSpawn" parent="." unique_id=1872612818 instance=ExtResource("3_6e3td")]
@@ -53,17 +54,25 @@ process_mode = 3
 script = ExtResource("6_pd3wb")
 
 [node name="InventoryGUI" parent="CanvasLayer" unique_id=1420648644 instance=ExtResource("6_voc6v")]
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -69.0
-offset_top = -45.0
-offset_right = 69.0
-offset_bottom = 45.0
+anchor_right = 0.74583334
+anchor_bottom = 0.75555557
+offset_left = -120.0
+offset_top = -95.0
+offset_right = 18.0
+offset_bottom = -5.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Hotbar" parent="CanvasLayer" unique_id=441987761 instance=ExtResource("8_ul44u")]
+offset_left = 171.0
+offset_top = 231.00002
+offset_right = 288.0
+offset_bottom = 252.00002
+metadata/_edit_use_anchors_ = true
 
 [connection signal="closed" from="CanvasLayer/InventoryGUI" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGUI" to="." method="_on_inventory_gui_opened"]
